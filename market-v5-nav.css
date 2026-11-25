@@ -1,0 +1,7 @@
+/* Keep the enlarged navigation usable on small screens */
+@media(max-width:650px){
+ .nav-overlay{overflow-y:auto;overscroll-behavior:contain;align-items:flex-start}
+ .nav-inner{gap:13px;padding-bottom:50px}
+ .nav-inner>a{font-size:25px}
+ .nav-social{margin-top:18px!important}
+}
