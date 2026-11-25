@@ -99,5 +99,5 @@ function routeTo(path, push=true) {
 }
 document.addEventListener('click',e=>{const a=e.target.closest('a');if(!a)return;let href=a.getAttribute('href');if(!href||!href.startsWith('/')||href.startsWith('//'))return; if(routeTo(href,true)){e.preventDefault();const nav=document.getElementById('site-nav');nav.classList.remove('is-open');nav.inert=true;nav.setAttribute('aria-hidden','true');document.body.classList.remove('nav-open');document.getElementById('menu-open')?.setAttribute('aria-expanded','false');}});
 window.addEventListener('popstate',()=>routeTo(location.pathname+location.hash,false));
-routeTo(location.protocol==='file:'?'/':location.pathname+location.hash,false);
+routeTo(location.protocol==='file:'?'/':(location.pathname==='/' && new URLSearchParams(location.search).has('page') ? '/'+new URLSearchParams(location.search).get('page') : location.pathname)+location.hash,false);
 </script></body></html>
