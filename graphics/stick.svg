@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" role="img" aria-label="Контроль шайбы"><title>Контроль шайбы</title><desc>Клюшка, шайба и линия движения</desc><defs><linearGradient id="metal" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#f1f1e0"/><stop offset="1" stop-color="#cbd1ba"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="5" stdDeviation="4" flood-opacity=".25"/></filter></defs><circle cx="150" cy="150" r="143" fill="#151718" stroke="#454a40" stroke-width="2"/><circle cx="150" cy="150" r="132" fill="#252725" stroke="#b9c4aa" stroke-width="2"/><path d="M56 52L65 44M236 243l9-9" stroke="#c94a1e" stroke-width="7" stroke-linecap="round"/><circle cx="150" cy="150" r="116" fill="none" stroke="#40423a" stroke-dasharray="2 7" stroke-width="4" opacity=".8"/><g filter="url(#s)">
+<path d="M106 66l33-8 52 130c8 22 18 27 45 25l25-3 6 23-49 14c-21 6-46-3-56-22z" fill="url(#metal)" stroke="#111413" stroke-width="8" stroke-linejoin="round"/>
+<path d="M115 76l21-6 49 126-22 8z" fill="#c94a1e"/>
+<path d="M169 203l61-3 23 6" fill="none" stroke="#111413" stroke-width="5"/>
+<ellipse cx="93" cy="217" rx="47" ry="15" fill="#0d0f10" stroke="#e9e7d3" stroke-width="5"/>
+<path d="M46 217v15c0 11 92 12 94 0v-15" fill="#1b1b1b" stroke="#e9e7d3" stroke-width="5"/>
+<path d="M52 227c24 9 58 9 81 0" fill="none" stroke="#c94a1e" stroke-width="4"/>
+<path d="M46 175c26-28 53-34 79-25" fill="none" stroke="#c94a1e" stroke-width="7" stroke-linecap="round"/>
+<path d="M103 136l27 14-22 18" fill="none" stroke="#c94a1e" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/></g></svg>
