@@ -1,0 +1,75 @@
+/* 2R Hockey · Academy and shop concepts v5 */
+.market{--mk-bg:#151816;--mk-dark:#0f1111;--mk-card:#232925;--mk-cream:#e4e8d2;--mk-muted:#aebaaa;--mk-orange:#d24f21;min-height:95vh;background:var(--mk-bg);color:var(--mk-cream);font-family:'Oswald',Impact,'Arial Narrow',sans-serif;padding-top:100px}
+.market *{box-sizing:border-box}
+.market button{cursor:pointer}
+.market-header{position:relative;isolation:isolate;overflow:hidden;padding:76px max(24px,5vw) 85px;background:linear-gradient(120deg,#151b19 0%,#1b211d 49%,#1b1612 100%);border-bottom:1px solid #d0502247}
+.market-header::before{content:"";position:absolute;z-index:-1;right:-115px;top:-230px;border:1px solid #cbd1bd28;width:660px;height:660px;border-radius:50%;box-shadow:0 0 0 50px #d7e3c509,0 0 0 140px #d6dbc504;transform:rotate(-18deg)}
+.market-header::after{content:"2R";position:absolute;z-index:-1;right:4%;bottom:-90px;font:italic 900 clamp(140px,24vw,350px)/1 Impact,Arial,sans-serif;letter-spacing:-.08em;color:#d34e2412;transform:skewX(-10deg)}
+.market-head-inner,.market-container{width:min(100%,1160px);margin:0 auto}
+.market-kicker{font:600 13px/1.2 'Oswald',Impact,sans-serif;letter-spacing:.22em;color:#e67e4f;text-transform:uppercase;margin:0 0 24px}
+.market h1{font:700 clamp(54px,8vw,112px)/.96 'Oswald',Impact,sans-serif;letter-spacing:-.028em;text-transform:uppercase;max-width:900px;margin:0 0 24px;color:var(--mk-cream)}
+.market h1 em,.market h2 em{color:var(--mk-orange);font-style:normal}
+.market-header p.market-lead{font:400 clamp(17px,2vw,23px)/1.55 system-ui,Arial,sans-serif;max-width:670px;margin:0;color:#c6d0c1}
+.market-labels{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:30px 0 0}
+.market-labels span{display:inline-flex;align-items:center;border:1px solid #b2bbaa66;border-radius:3px;color:#d6ddc9;padding:8px 13px;text-transform:uppercase;font-size:13px;letter-spacing:.06em}
+.market-section{padding:72px max(24px,5vw)}
+.market-section-alt{background:#1e2420}
+.market-section h2{font:700 clamp(36px,5.1vw,65px)/1.05 'Oswald',Impact,sans-serif;text-transform:uppercase;letter-spacing:-.02em;margin:0 0 14px;color:var(--mk-cream)}
+.market-section .market-subtitle{font:400 16px/1.6 system-ui,Arial,sans-serif;color:var(--mk-muted);max-width:760px;margin:0 0 33px}
+.market-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.course-card,.store-card{border:1px solid #404a41;background:#252b26;min-width:0;overflow:hidden;position:relative}
+.course-art{height:210px;background:radial-gradient(circle at 74% 30%,#eb622845,transparent 40%),linear-gradient(135deg,#202d2a,#131818);display:grid;place-items:center;position:relative;overflow:hidden}
+.course-art::before{content:"";position:absolute;inset:16px;border:1px solid #d5e0c51a}
+.course-art::after{content:"";position:absolute;width:190px;height:190px;border:3px solid #d1d9c929;border-radius:50%;right:-50px;bottom:-95px;box-shadow:0 0 0 42px #e0e4d00c}
+.course-art .course-glyph{font:italic 800 98px/.9 'Oswald',Impact,sans-serif;color:#dedfcd;text-shadow:4px 8px 0 #0c0f0e;position:relative;z-index:1;transform:rotate(-11deg)}
+.course-card:nth-child(2) .course-art{background:radial-gradient(circle at 15% 80%,#d24d2040,transparent 44%),linear-gradient(135deg,#292924,#111819)}
+.course-card:nth-child(3) .course-art{background:radial-gradient(circle at 70% 42%,#d24d2038,transparent 45%),linear-gradient(135deg,#131b1d,#252821)}
+.course-card:nth-child(2) .course-glyph,.course-card:nth-child(3) .course-glyph{color:#cf5125}
+.course-status{position:absolute;top:14px;left:14px;z-index:2;background:#101412d9;border:1px solid #dfded24d;color:#f0e9db;padding:8px 10px;font:600 12px/1 'Oswald',Impact,sans-serif;letter-spacing:.11em;text-transform:uppercase}
+.course-content{padding:23px 22px 26px}
+.course-eyebrow{font:600 12px/1.2 'Oswald',Impact,sans-serif;letter-spacing:.14em;color:#ec7b45;text-transform:uppercase;margin:0 0 10px}
+.course-content h3,.store-card h3{font:600 30px/1.06 'Oswald',Impact,sans-serif;text-transform:uppercase;margin:0 0 11px;color:#edf0dc}
+.course-content p,.store-card p{font:400 15px/1.5 system-ui,Arial,sans-serif;color:#b9c2b4;margin:0 0 16px}
+.course-more{display:block;color:#f2eadb;font:500 16px/1.25 'Oswald',Impact,sans-serif;border-top:1px solid #66706166;margin-top:17px;padding-top:15px}
+.course-more summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:15px;cursor:pointer}
+.course-more summary::-webkit-details-marker{display:none}
+.course-more summary::after{content:"+";font:500 28px/1 Arial,sans-serif;color:#db602f}
+.course-more[open] summary::after{content:"−"}
+.course-more ul{padding:8px 0 0 20px;font:400 14px/1.7 system-ui,Arial,sans-serif;color:#c4cebf;margin:0}
+.course-lock{display:flex;align-items:center;gap:11px;background:#151a17;border:1px solid #494f42;margin-top:18px;padding:12px 13px;color:#c8cfbf;font:500 13px/1.3 system-ui,Arial,sans-serif}
+.course-lock strong{color:#df6b3c;font-size:20px;line-height:1}
+.market-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.market-step{border-top:2px solid #cb542a;padding:17px 8px 2px}
+.market-step b{color:#d65d30;font:700 29px/1 'Oswald',Impact,sans-serif}
+.market-step h3{font:600 25px/1.1 'Oswald',Impact,sans-serif;text-transform:uppercase;margin:13px 0 10px}
+.market-step p{font:400 14px/1.65 system-ui,Arial,sans-serif;color:#bbc5b9;margin:0}
+.market-section-cta{padding:52px 20px;text-align:center;background:linear-gradient(125deg,#c64b21,#823019)}
+.market-section-cta h2{color:#f0efdf;font-size:clamp(29px,5vw,50px);margin:0 0 13px}
+.market-section-cta p{font:400 15px/1.5 system-ui,Arial,sans-serif;margin:0 auto;max-width:620px;color:#f3dbcd}
+.market-notice{border-left:3px solid #df622f;background:#282e28;padding:14px 16px;margin:28px 0 0;font:400 14px/1.55 system-ui,Arial,sans-serif;color:#bec8b9}
+.shop-filters{display:flex;gap:9px;flex-wrap:wrap;margin:0 0 26px}
+.shop-filter{font:600 15px/1.1 'Oswald',Impact,sans-serif;letter-spacing:.05em;text-transform:uppercase;padding:11px 17px;border:1px solid #687061;color:#d8dfce;background:transparent;border-radius:0}
+.shop-filter:hover,.shop-filter:focus-visible{border-color:#f16d37}
+.shop-filter.is-active{background:#c94b22;border-color:#c94b22;color:#f7f1e8}
+.shop-card-art{height:225px;position:relative;display:grid;place-items:center;background:radial-gradient(circle at 50% 45%,#354239 0%,#202722 50%,#111715 100%)}
+.shop-card-art::before{content:"";position:absolute;inset:16px;border:1px solid #ffffff15}
+.shop-art-object{position:relative;width:180px;height:160px;filter:drop-shadow(6px 12px 9px #0007)}
+.shop-puck .shop-art-object{height:47px;width:155px;border-radius:50% / 65%;background:linear-gradient(175deg,#252725,#080b0a);border:5px solid #121412;box-shadow:inset 0 6px 0 #63675b,0 24px 0 -3px #070908,0 27px 0 2px #394339;transform:rotate(-15deg)}
+.shop-puck .shop-art-object::after{content:"2R";position:absolute;inset:0;display:grid;place-items:center;color:#d65a29;font:italic 900 52px/1 Impact,sans-serif}
+.shop-apparel .shop-art-object{background:#161e1c;clip-path:polygon(29% 8%,44% 0%,55% 0%,71% 8%,95% 30%,81% 51%,73% 42%,75% 100%,25% 100%,27% 42%,19% 51%,5% 30%);border:3px solid #4b554d}
+.shop-apparel .shop-art-object::after{content:"2R";position:absolute;inset:20% 0 0;display:grid;place-items:center;color:#d65b2c;font:italic 900 53px/1 Impact,sans-serif}
+.shop-bottle .shop-art-object{height:155px;width:76px;border-radius:12px 12px 20px 20px;background:linear-gradient(90deg,#151a18,#455348 50%,#131a17);border:3px solid #7e8c78}
+.shop-bottle .shop-art-object::before{content:"";position:absolute;top:-25px;left:17px;right:17px;height:23px;border-radius:5px 5px 2px 2px;background:#d65226}
+.shop-bottle .shop-art-object::after{content:"2R";position:absolute;inset:0;display:grid;place-items:center;color:#e1e6d1;font:italic 900 34px/1 Impact,sans-serif}
+.shop-accessory .shop-art-object{height:105px;width:174px;border-radius:17px;background:linear-gradient(115deg,#313c35,#0d1310);transform:rotate(-17deg);border:4px solid #727b6b;box-shadow:inset 0 0 0 4px #19231f}
+.shop-accessory .shop-art-object::after{content:"TRAIN SMART";position:absolute;inset:0;display:grid;place-items:center;color:#dc6131;font:700 22px/1 'Oswald',Impact,sans-serif}
+.store-content{padding:20px 21px 22px}
+.store-content .store-type{color:#ea7a49;letter-spacing:.12em;font:600 12px/1.2 'Oswald',Impact,sans-serif;margin:0 0 9px;text-transform:uppercase}
+.store-content .store-status{border-top:1px solid #67746565;padding-top:13px;margin-top:18px;color:#d3d9cc;font:500 14px/1.3 'Oswald',Impact,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+.store-card[hidden]{display:none!important}
+.market-bottomlinks{display:flex;gap:15px;flex-wrap:wrap;margin-top:30px}
+.market-bottomlinks a{display:inline-flex;text-decoration:none;color:#f3f0de;border:1px solid #d85a2c;padding:12px 18px;text-transform:uppercase;font:600 19px/1 'Oswald',Impact,sans-serif;transition:background .2s}
+.market-bottomlinks a:hover{background:#ae421f}
+@media(max-width:900px){.market-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.market-steps{grid-template-columns:1fr}.market-step{max-width:none}}
+@media(max-width:620px){.market{padding-top:70px}.market-header{padding:78px 20px 68px}.market-header::before{width:410px;height:410px;right:-240px;top:-90px}.market h1{font-size:clamp(51px,12vw,68px)}.market-header p.market-lead{font-size:16px}.market-kicker{font-size:12px;margin-bottom:17px}.market-labels{gap:8px}.market-labels span{font-size:11px;padding:6px 9px}.market-section{padding:50px 17px}.market-section h2{font-size:37px}.market-grid{grid-template-columns:1fr;gap:14px}.course-art{height:175px}.course-art .course-glyph{font-size:82px}.course-content{padding:19px}.course-content h3,.store-card h3{font-size:28px}.market-section .market-subtitle{font-size:14px;margin-bottom:25px}.market-steps{gap:19px}.market-section-cta{padding:46px 22px}.shop-card-art{height:200px}.shop-filters{gap:7px}.shop-filter{padding:10px 12px;font-size:13px}.market-bottomlinks a{flex:1;justify-content:center}}
+@media(prefers-reduced-motion:no-preference){.course-card,.store-card{transition:transform .18s,border-color .18s}.course-card:hover,.store-card:hover{transform:translateY(-4px);border-color:#af522c}}
