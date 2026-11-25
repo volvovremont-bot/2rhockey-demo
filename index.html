@@ -31,6 +31,7 @@
 <link rel="stylesheet" href="/graphics-v3.css?v=3" />
 <link rel="stylesheet" href="/home-v4.css?v=4" />
 <link rel="stylesheet" href="/market-v5.css?v=5" />
+<link rel="stylesheet" href="/market-v5-nav.css?v=5" />
 </head>
 <body class="page-home"><aside id="preview-note">ДЕМОВЕРСИЯ • Форма работает только как демонстрация — данные никуда не отправляются.</aside>
 <a class="skip-link" href="#main">К содержимому</a>
@@ -102,6 +103,19 @@ function routeTo(path, push=true) {
   return true;
 }
 document.addEventListener('click',e=>{const a=e.target.closest('a');if(!a)return;let href=a.getAttribute('href');if(!href||!href.startsWith('/')||href.startsWith('//'))return; if(routeTo(href,true)){e.preventDefault();const nav=document.getElementById('site-nav');nav.classList.remove('is-open');nav.inert=true;nav.setAttribute('aria-hidden','true');document.body.classList.remove('nav-open');document.getElementById('menu-open')?.setAttribute('aria-expanded','false');}});
+document.addEventListener('click', event => {
+  const button = event.target.closest('[data-shop-filter]');
+  if (!button) return;
+  const selected = button.getAttribute('data-shop-filter');
+  document.querySelectorAll('[data-shop-filter]').forEach(el => {
+    const active = el.getAttribute('data-shop-filter') === selected;
+    el.classList.toggle('is-active', active);
+    el.setAttribute('aria-pressed', String(active));
+  });
+  document.querySelectorAll('[data-shop-category]').forEach(card => {
+    card.hidden = selected !== 'all' && card.getAttribute('data-shop-category') !== selected;
+  });
+});
 window.addEventListener('popstate',()=>routeTo(location.pathname+location.hash,false));
 routeTo(location.protocol==='file:'?'/':(location.pathname==='/' && new URLSearchParams(location.search).has('page') ? '/'+new URLSearchParams(location.search).get('page') : location.pathname)+location.hash,false);
 </script></body></html>
