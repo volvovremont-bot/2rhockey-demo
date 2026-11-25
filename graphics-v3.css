@@ -1,0 +1,44 @@
+/* 2R Hockey · vector illustration system · philosophy v3 */
+.philosophy-section .thoughts article::before,
+.philosophy-section .thoughts article::after{content:none!important;display:none!important}
+.philosophy-section .thoughts article .thought-icon{
+  display:block!important;visibility:visible!important;
+  flex:0 0 132px;width:132px;height:132px;
+  font-size:0!important;line-height:0;color:transparent!important;
+  border:0!important;border-radius:0!important;
+  background-color:transparent!important;
+  background-repeat:no-repeat;background-position:center;background-size:contain;
+  transform:none!important;box-shadow:none!important
+}
+.philosophy-section .thoughts article:nth-child(1) .thought-icon{background-image:url('/graphics/skate.svg')}
+.philosophy-section .thoughts article:nth-child(2) .thought-icon{background-image:url('/graphics/stick.svg')}
+.philosophy-section .thoughts article:nth-child(3) .thought-icon{background-image:url('/graphics/brain.svg')}
+.philosophy-section .thoughts article{align-items:center;column-gap:24px}
+.philosophy-section .rink-card{
+  display:block;width:100%;max-width:840px;
+  border:0!important;background-color:transparent!important;
+  background-image:url('/graphics/tactics-rink.svg');
+  background-position:center;background-size:100% 100%;background-repeat:no-repeat;
+  padding:0!important;aspect-ratio:1000/640;
+  border-radius:16px;box-shadow:none;margin:48px auto
+}
+.philosophy-section .rink-card svg{display:none!important}
+@media(max-width:650px){
+ .philosophy-section .thoughts{gap:27px;margin:28px 0 35px}
+ .philosophy-section .thoughts article{display:grid!important;column-gap:10px;min-height:115px}
+ .philosophy-section .thoughts article:nth-child(odd){grid-template-columns:minmax(0,1fr) 110px}
+ .philosophy-section .thoughts article:nth-child(even){grid-template-columns:110px minmax(0,1fr)}
+ .philosophy-section .thoughts article:nth-child(odd) .thought-icon{grid-column:2;grid-row:1}
+ .philosophy-section .thoughts article:nth-child(odd) p{grid-column:1;grid-row:1}
+ .philosophy-section .thoughts article:nth-child(even) .thought-icon{grid-column:1;grid-row:1}
+ .philosophy-section .thoughts article:nth-child(even) p{grid-column:2;grid-row:1}
+ .philosophy-section .thoughts article .thought-icon{width:110px;height:110px;min-width:0;min-height:0;flex:none}
+ .philosophy-section .thoughts p{font-size:clamp(18px,5.4vw,22px);line-height:1.18;overflow-wrap:normal}
+ .philosophy-section .rink-card{max-width:none;margin:27px auto 40px;width:100%;aspect-ratio:1000/640;border-radius:9px}
+}
+@media(max-width:370px){
+ .philosophy-section .thoughts article:nth-child(odd){grid-template-columns:minmax(0,1fr) 90px}
+ .philosophy-section .thoughts article:nth-child(even){grid-template-columns:90px minmax(0,1fr)}
+ .philosophy-section .thoughts article .thought-icon{width:90px;height:90px}
+ .philosophy-section .thoughts p{font-size:18px}
+}
