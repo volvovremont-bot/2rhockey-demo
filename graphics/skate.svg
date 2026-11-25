@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" role="img" aria-label="Катание"><title>Катание</title><desc>Векторный хоккейный конёк</desc><defs><linearGradient id="metal" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#f1f1e0"/><stop offset="1" stop-color="#cbd1ba"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="5" stdDeviation="4" flood-opacity=".25"/></filter></defs><circle cx="150" cy="150" r="143" fill="#151718" stroke="#454a40" stroke-width="2"/><circle cx="150" cy="150" r="132" fill="#252725" stroke="#b9c4aa" stroke-width="2"/><path d="M56 52L65 44M236 243l9-9" stroke="#c94a1e" stroke-width="7" stroke-linecap="round"/><circle cx="150" cy="150" r="116" fill="none" stroke="#40423a" stroke-dasharray="2 7" stroke-width="4" opacity=".8"/><g filter="url(#s)" transform="translate(2 9)">
+<path d="M76 189l18-9 17-59c6-20 28-30 54-25l25 5 17 61 30 19 13 28-23 17-146-6z" fill="url(#metal)" stroke="#101412" stroke-width="8" stroke-linejoin="round"/><path d="M119 119l51-13 20 57-80 18z" fill="#c94a1e" opacity=".97"/>
+<path d="M122 122l-9 52M141 118l-6 54M157 120l-3 52M172 130l-1 43" stroke="#222623" stroke-width="4"/>
+<path d="M104 140l69 13M103 154l74 15M99 168l79 15" stroke="#f6f2dd" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M85 221h159l-7 19H90z" fill="#141716" stroke="#d9decb" stroke-width="6"/>
+<path d="M85 244h167M112 241l-17 15M221 241l19 15" stroke="#bcc1b0" stroke-width="6" stroke-linecap="round"/>
+<path d="M102 209h138" stroke="#c94a1e" stroke-width="10" stroke-linecap="round"/></g>
+<g fill="none" stroke="#c94a1e" stroke-width="6" stroke-linecap="round"><path d="M53 105C62 82 76 68 93 64"/><path d="M53 125C56 115 60 111 66 105"/></g></svg>
