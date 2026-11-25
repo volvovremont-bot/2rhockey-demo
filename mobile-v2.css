@@ -1,0 +1,106 @@
+/* 2R Hockey · Mobile fidelity pass 1 */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
+:root{--orange:#c8491d;--cream:#dddec8;--line:#d7d9c5}
+body{font-family:'Oswald',Impact,'Arial Narrow',sans-serif;overflow-x:hidden;padding-bottom:0!important}
+.display-title,.big-statement,.number-list li,.service summary,.service-note,.thoughts p,.comparison h2,.coming-soon,.nav-inner>a,.section-actions .action-link,.accent-chip,.about-list h2,.sessions-description,.home-discover{font-family:'Oswald',Impact,'Arial Narrow',sans-serif;font-weight:600;font-stretch:condensed;letter-spacing:-.2px}
+#preview-note{display:none!important}
+.site-footer::after{content:'ТЕСТОВАЯ ВЕРСИЯ · ЗАЯВКИ НЕ ОТПРАВЛЯЮТСЯ';display:block;flex-basis:100%;font:10px/1.4 Arial,sans-serif;letter-spacing:.3px;color:#989b8d}
+.section-textured{background-image:linear-gradient(180deg,rgba(17,17,17,.79),rgba(31,31,31,.86)),repeating-linear-gradient(116deg,rgba(0,0,0,.56) 0 3px,transparent 3px 50px),linear-gradient(30deg,#323232,#1d1d1d)}
+.nav-open::before{content:'';position:fixed;z-index:39;inset:0;background:#0008}
+.nav-overlay{inset:0 0 0 auto;width:min(67vw,340px);min-width:250px;display:flex;align-items:flex-start;justify-content:flex-start;padding:90px 24px 38px;background:#111;box-shadow:-6px 0 30px #0009}
+.nav-inner{width:100%;max-width:none;gap:16px}
+.nav-inner>a{font-size:27px;line-height:1.25;font-weight:600}
+.nav-caption{font-size:12px;letter-spacing:1px}
+.nav-social{flex-wrap:wrap;gap:10px!important;margin-top:28px!important}
+.nav-social a{border-radius:50%;background:var(--orange);color:var(--cream)!important;display:flex;justify-content:center;align-items:center;min-height:43px;min-width:43px;padding:4px;font-size:9px!important;font-weight:700}
+.menu-close{top:22px;right:20px;font-size:38px}
+.header{position:fixed;pointer-events:none;max-width:none}
+.menu-button,.header .brand{pointer-events:auto}
+.home-tagline{font-family:'Oswald',Impact,'Arial Narrow',sans-serif!important;font-weight:500}
+.home-discover{font-weight:600}
+.about-list .number-list li:nth-child(odd){color:var(--cream)}
+.about-list .number-list li em{color:var(--orange)}
+.copy-section .section-container{position:relative;z-index:1}
+@media(max-width:650px){
+ html{scroll-padding-top:90px}
+ .header{height:84px;padding:20px 14px;align-items:center}
+ .header .brand{display:none!important}
+ .menu-button{padding:8px 2px;gap:7px;margin-top:0}
+ .menu-button span{width:39px;height:5px}
+ .section-container{width:calc(100% - 30px)}
+ .display-title{font-size:40px;line-height:1.07;font-weight:700;letter-spacing:-.4px;margin-bottom:24px}
+ .copy-section{padding:125px 0 75px}
+ .copy-section h2,.lead-section h2{font-family:'Oswald',Impact,'Arial Narrow',sans-serif;font-size:26px;font-weight:600;line-height:1.18}
+ .action-link{font-family:'Oswald',Impact,'Arial Narrow',sans-serif;font-weight:600}
+ .home-hero{height:100svh;min-height:550px;max-height:none}
+ .home-identity{top:-3vh}
+ .home-identity .home-logo{width:min(61vw,340px)}
+ .home-tagline{font-size:22px!important;font-weight:500;letter-spacing:-.1px;line-height:1.1;margin-top:4px}
+ .home-discover{font-size:23px;bottom:20%;letter-spacing:.1px}
+ .about-hero{display:block;padding:0;position:relative;height:580px;min-height:580px;overflow:hidden;border-bottom:10px solid var(--cream);background:#1e1e1e}
+ .about-hero::before{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(to bottom,rgba(0,0,0,.45),transparent 40%,rgba(0,0,0,.09))}
+ .coach-image{position:absolute;inset:auto 0 0;width:100%;height:84%;max-height:none;object-fit:cover;object-position:center top;filter:saturate(.96);z-index:0}
+ .about-content{position:absolute;inset:0;max-width:none;width:100%;height:100%;z-index:2;align-self:auto}
+ .about-hero .display-title{position:absolute;top:110px;left:15px;font-size:41px;line-height:1.05;margin:0;letter-spacing:-.4px}
+ .accent-chip{position:absolute;top:240px;left:15px;font-size:47px;line-height:1.05;padding:2px 15px 4px;font-style:italic;transform:skewX(-4deg)}
+ .eyebrow{display:none}
+ .about-list{padding-top:37px;background:linear-gradient(130deg,#303030,#242424)}
+ .about-list .section-container{width:calc(100% - 30px)}
+ .about-list h2{font-size:27px;line-height:1.13;margin-bottom:28px;max-width:95%}
+ .number-list li{font-size:21px;line-height:1.24;gap:12px;margin:0 0 20px;text-transform:uppercase;font-weight:600}
+ .number-list li::before{font-size:65px;line-height:1;min-width:60px;font-style:italic;letter-spacing:-4px}
+ .number-list li:nth-child(odd){color:var(--cream)}
+ .about-list .info-paragraph{font-size:16px;line-height:1.5}
+ .section-actions{gap:33px;margin:42px 0 0;flex-direction:column}
+ .section-actions .action-link{font-size:21px}
+ .philosophy-section{padding-top:119px;background-color:#292929}
+ .philosophy-section .display-title{margin:0 0 45px}
+ .big-statement{font-size:24px;line-height:1.27;font-weight:600;text-transform:uppercase}
+ .thoughts{margin:28px 0 35px;gap:25px}
+ .thoughts article{display:grid;align-items:center;grid-template-columns:minmax(0,1fr) 100px;gap:12px;background:transparent;padding:0;min-height:142px}
+ .thoughts article:nth-child(2){grid-template-columns:100px minmax(0,1fr)}
+ .thoughts article:nth-child(2)::before{content:'ЖМИ';grid-column:1;grid-row:1;place-self:center;border:4px double #292929;border-radius:43% 38% 55% 32%;background:var(--cream);color:var(--orange);width:90px;height:95px;display:grid;place-items:center;font-size:28px;font-weight:700;transform:rotate(9deg)}
+ .thoughts article:nth-child(2) p{grid-column:2;grid-row:1}
+ .thoughts article:nth-child(1)::after,.thoughts article:nth-child(3)::after{content:'ЖМИ';border:4px double #292929;border-radius:44% 55% 42% 47%;background:var(--cream);color:var(--orange);width:94px;height:87px;display:grid;place-items:center;font-size:28px;font-weight:700;transform:rotate(-8deg)}
+ .thoughts article .thought-icon{display:none}
+ .thoughts p{font-size:21px;line-height:1.24;font-weight:600;text-transform:uppercase}
+ .rink-card{margin:36px 0;background:none;border:0;padding:0;max-width:none}
+ .comparison{display:block;margin-bottom:38px}
+ .comparison>div{background:none;padding:6px 0 16px}
+ .comparison h2{font-family:'Oswald',Impact,'Arial Narrow',sans-serif;font-size:24px!important;margin-bottom:12px}
+ .comparison p{font-family:'Oswald',Impact,'Arial Narrow',sans-serif;font-size:20px;text-transform:uppercase;line-height:1.3}
+ .sessions-intro{padding:119px 0 40px;min-height:250px;border-bottom:3px solid var(--orange);background-color:#242424}
+ .sessions-intro .display-title{font-size:42px;margin:0}
+ .sessions-description,.sessions-intro .orange-line{display:none}
+ .services{padding:0 0 22px}
+ .services .section-container{width:calc(100% - 24px)}
+ .service{border-bottom:2px solid var(--line)}
+ .service:first-child{border-top:0}
+ .service summary{font-size:23px;font-weight:600;line-height:1.17;padding:34px 2px;gap:15px}
+ .service summary span:first-child{max-width:calc(100% - 45px)}
+ .service summary .plus{font-family:Arial,sans-serif;font-size:41px;font-weight:800;flex-shrink:0;line-height:1}
+ .service-body{font-size:16px;padding:12px 12px 25px}
+ .service-price{font-family:'Oswald',Impact,'Arial Narrow',sans-serif;font-size:26px;font-weight:600}
+ .service-note{font-size:16px;line-height:1.28;font-weight:600;margin:36px 2px 10px}
+ .lead-section{padding:48px 0 72px}
+ .lead-section h2{font-size:30px}
+ .lead-form{gap:14px}
+ .lead-form label{font-family:'Oswald',Impact,'Arial Narrow',sans-serif;font-size:19px}
+ .lead-form .check-row{font-size:13px;font-family:Arial,sans-serif}
+ .submit-button{font-family:'Oswald',Impact,'Arial Narrow',sans-serif;font-size:22px;font-weight:600}
+ .camp-section .big-statement{font-size:25px;line-height:1.24}
+ .camp-section .info-paragraph{font-family:'Oswald',Impact,'Arial Narrow',sans-serif;font-size:19px;line-height:1.45}
+ .coming-soon{font-family:'Oswald',Impact,'Arial Narrow',sans-serif;font-size:36px;padding:25px 12px;margin:45px 0 20px}
+ .site-footer{font-family:'Oswald',Impact,'Arial Narrow',sans-serif;font-size:12px;padding:14px 18px}
+ .site-footer a{font-size:10px}
+}
+@media(max-width:370px){
+ .about-hero{height:540px;min-height:540px}
+ .about-hero .display-title{font-size:38px}
+ .number-list li{font-size:19px}
+ .thoughts article{grid-template-columns:minmax(0,1fr) 80px}
+ .thoughts article:nth-child(2){grid-template-columns:80px minmax(0,1fr)}
+ .thoughts article:nth-child(1)::after,.thoughts article:nth-child(2)::before,.thoughts article:nth-child(3)::after{width:74px;height:76px;font-size:22px}
+ .thoughts p{font-size:19px}
+ .service summary{font-size:21px}
+}
