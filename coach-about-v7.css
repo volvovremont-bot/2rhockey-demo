@@ -1,0 +1,131 @@
+/* 2R Hockey · About page editorial redesign v7 */
+.coach-about-page{--ca-bg:#161918;--ca-bg2:#222522;--ca-text:#e4e8d5;--ca-muted:#b9c3b5;--ca-orange:#d34f23;--ca-line:#69716760;background:var(--ca-bg);color:var(--ca-text);font-family:'Oswald',Impact,'Arial Narrow',sans-serif;overflow:hidden}
+.coach-about-page *{box-sizing:border-box}
+.coach-about-page a:focus-visible{outline:3px solid #f67b45;outline-offset:4px}
+.coach-about-hero{position:relative;isolation:isolate;min-height:760px;display:flex;align-items:center;padding:120px max(30px,7vw) 75px;background:radial-gradient(ellipse 72% 88% at 77% 46%,#3b332a 0%,#191b19 61%,#121514 100%);overflow:hidden;border-bottom:6px solid #d45426}
+.coach-about-hero::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(109deg,transparent 0 46px,#e0e6d308 47px 48px,transparent 49px 94px);opacity:.75;z-index:-1}
+.coach-about-hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,#151716 0%,#151716fa 25%,#151716b8 51%,transparent 77%);pointer-events:none}
+.coach-about-watermark{position:absolute;top:12%;right:-7%;font:italic 900 clamp(230px,35vw,630px)/1 Impact,'Arial Black',sans-serif;letter-spacing:-.09em;color:#e2e8d307;transform:skewX(-9deg);pointer-events:none}
+.coach-about-photo-wrap{position:absolute;right:max(-4%,0px);bottom:0;height:94%;width:min(47vw,630px);z-index:0;overflow:hidden;display:flex;align-items:flex-end;justify-content:center}
+.coach-about-photo{display:block;width:100%;height:100%;object-fit:cover;object-position:center top;filter:saturate(.9) contrast(1.06)}
+.coach-about-hero-inner{position:relative;z-index:2;width:min(100%,1240px);margin:auto}
+.coach-about-crumb{display:flex;align-items:center;gap:12px;color:#ef8451;font:600 13px/1.2 'Oswald',Impact,sans-serif;letter-spacing:.22em;text-transform:uppercase;margin:0 0 35px}
+.coach-about-crumb::before{content:"";height:3px;width:34px;background:var(--ca-orange)}
+.coach-about-main-title{font:700 clamp(70px,9vw,140px)/.88 'Oswald',Impact,sans-serif;letter-spacing:-.03em;text-transform:uppercase;margin:0 0 24px;max-width:900px}
+.coach-about-main-title span{display:block;color:var(--ca-orange)}
+.coach-about-fullname{font:600 clamp(27px,3.3vw,42px)/1.07 'Oswald',Impact,sans-serif;text-transform:uppercase;letter-spacing:.04em;margin:0 0 20px}
+.coach-about-name-caption{font:600 12px/1.4 'Oswald',Impact,sans-serif;letter-spacing:.2em;color:#b9c4b7;text-transform:uppercase;margin:0 0 28px}
+.coach-about-hero-intro{font:400 clamp(17px,1.6vw,20px)/1.65 system-ui,Arial,sans-serif;max-width:505px;color:#e2e5d7;margin:0 0 28px}
+.coach-about-actions{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.coach-about-button{display:inline-flex;align-items:center;gap:17px;padding:15px 23px;min-height:52px;text-decoration:none;color:#fff4e9;background:var(--ca-orange);text-transform:uppercase;font:600 21px/1 'Oswald',Impact,sans-serif;transform:skewX(-5deg);transition:background .2s,transform .2s}
+.coach-about-button:hover{background:#ec612e;transform:skewX(-5deg) translateY(-2px)}
+.coach-about-button span{transform:skewX(5deg)}
+.coach-about-plainlink{font:600 18px/1 'Oswald',Impact,sans-serif;text-transform:uppercase;text-underline-offset:7px;color:#e7e9d8}
+.coach-about-plainlink:hover{color:#f07340}
+.coach-about-container{width:min(calc(100% - 50px),1160px);margin:auto}
+.coach-about-story{padding:116px 0 98px;position:relative}
+.coach-about-story-grid{display:grid;grid-template-columns:.67fr 1.33fr;gap:clamp(40px,8vw,120px);align-items:start}
+.coach-about-section-tag{font:600 13px/1.2 'Oswald',Impact,sans-serif;color:var(--ca-orange);letter-spacing:.25em;text-transform:uppercase;margin:0 0 24px}
+.coach-about-small-heading{font:700 clamp(38px,5vw,67px)/1.04 'Oswald',Impact,sans-serif;text-transform:uppercase;letter-spacing:-.025em;margin:0}
+.coach-about-small-heading em{color:var(--ca-orange);font-style:normal}
+.coach-about-text{font:400 clamp(17px,1.65vw,20px)/1.8 system-ui,Arial,sans-serif;color:#c6cebf}
+.coach-about-text p{margin:0 0 22px}
+.coach-about-text p:last-child{margin-bottom:0}
+.coach-about-text strong{font-weight:650;color:#e8ebdd}
+.coach-about-quote{margin:0;padding:43px 38px 46px 49px;background:#252a26;border-left:5px solid var(--ca-orange);position:relative}
+.coach-about-quote::before{content:"“";position:absolute;left:14px;top:-7px;font:900 110px/.9 Georgia,serif;color:#e36b3544}
+.coach-about-quote p{position:relative;z-index:1;font:600 clamp(25px,3.2vw,43px)/1.23 'Oswald',Impact,sans-serif;text-transform:uppercase;margin:0}
+.coach-about-quote footer{font:500 13px/1.5 'Oswald',Impact,sans-serif;letter-spacing:.15em;color:#d56a3c;margin-top:20px;text-transform:uppercase}
+.coach-about-method{background:#242925;padding:112px 0 110px;border-top:1px solid #394037;border-bottom:1px solid #394037}
+.coach-about-method-heading{max-width:800px;margin-bottom:42px}
+.coach-about-method-title{font:700 clamp(45px,5.8vw,75px)/1.05 'Oswald',Impact,sans-serif;text-transform:uppercase;letter-spacing:-.02em;margin:0}
+.coach-about-method-title em{font-style:normal;color:var(--ca-orange)}
+.coach-about-method-lead{font:400 17px/1.7 system-ui,Arial,sans-serif;color:#b8c2b4;max-width:650px;margin:19px 0 0}
+.coach-about-method-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.coach-about-method-item{background:#181d1a;border:1px solid #4b584b;padding:27px 23px 31px;min-height:250px;position:relative;overflow:hidden}
+.coach-about-method-item::after{content:"";position:absolute;bottom:0;left:0;width:30%;height:3px;background:var(--ca-orange)}
+.coach-about-method-item .num{display:block;font:600 16px/1 'Oswald',Impact,sans-serif;color:#d95b2e;margin-bottom:30px}
+.coach-about-method-item h3{font:700 clamp(26px,2.8vw,38px)/1.12 'Oswald',Impact,sans-serif;text-transform:uppercase;margin:0 0 15px}
+.coach-about-method-item p{font:400 15px/1.65 system-ui,Arial,sans-serif;color:#bbc6b9;margin:0}
+.coach-about-process{padding:100px 0;display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:start}
+.coach-about-steps{border-top:1px solid var(--ca-line)}
+.coach-about-step{display:grid;grid-template-columns:56px 1fr;gap:18px;align-items:start;padding:24px 0 27px;border-bottom:1px solid var(--ca-line)}
+.coach-about-step .num{font:700 28px/1 'Oswald',Impact,sans-serif;color:#d95b2e}
+.coach-about-step h3{font:600 26px/1.1 'Oswald',Impact,sans-serif;text-transform:uppercase;margin:0 0 10px}
+.coach-about-step p{font:400 15px/1.6 system-ui,Arial,sans-serif;color:#b7c3b6;margin:0}
+.coach-about-video{padding:95px 0;background:linear-gradient(120deg,#151b1b,#22221e);border-top:1px solid #374239}
+.coach-about-video-grid{display:grid;grid-template-columns:1.25fr .75fr;align-items:center;gap:70px}
+.coach-about-video p:not(.coach-about-section-tag){font:400 17px/1.7 system-ui,Arial,sans-serif;color:#c6cfbf;max-width:680px}
+.coach-about-play{border:1px solid #515e4d;aspect-ratio:1.4;background:radial-gradient(circle at 62% 30%,#cc51222e,transparent 49%),linear-gradient(135deg,#202a27,#131615);display:flex;flex-direction:column;align-items:center;justify-content:center;text-decoration:none;color:var(--ca-text);position:relative;gap:14px}
+.coach-about-play::after{content:"";position:absolute;inset:15px;border:1px solid #dbe1c81b}
+.coach-about-play-icon{border:2px solid #d85a2d;color:#f2eade;border-radius:50%;width:80px;height:80px;display:grid;place-items:center;font:600 30px/1 'Oswald',Impact,sans-serif;padding-left:4px;transition:transform .2s,background .2s}
+.coach-about-play:hover .coach-about-play-icon{transform:scale(1.08);background:#c75024}
+.coach-about-play-label{font:600 16px/1 'Oswald',Impact,sans-serif;text-transform:uppercase;letter-spacing:.08em}
+.coach-about-final{background:linear-gradient(120deg,#b9411e,#912f17);text-align:center;padding:84px 22px 99px}
+.coach-about-final .coach-about-section-tag{color:#f3e0d2}
+.coach-about-final h2{font:700 clamp(40px,6vw,78px)/1.05 'Oswald',Impact,sans-serif;text-transform:uppercase;max-width:750px;margin:0 auto 29px;color:#f7eedd}
+.coach-about-final .coach-about-button{background:#eae9d9;color:#141916}
+.coach-about-final .coach-about-button:hover{background:#fff}
+@media(max-width:900px){
+ .coach-about-hero{min-height:690px;padding:115px 30px 70px}
+ .coach-about-hero::after{background:linear-gradient(90deg,#151716 0%,#151716e0 38%,#15171655 84%)}
+ .coach-about-photo-wrap{width:58vw}
+ .coach-about-story-grid,.coach-about-video-grid{grid-template-columns:1fr;gap:30px}
+ .coach-about-process{grid-template-columns:1fr;gap:34px}
+ .coach-about-method-grid{gap:10px}
+}
+@media(max-width:650px){
+ .coach-about-hero{min-height:780px;height:auto;padding:108px 20px 40px;display:flex;align-items:flex-start}
+ .coach-about-hero::after{background:linear-gradient(180deg,#151716d9 0%,#151716ca 23%,#1517160a 50%,#14161428 71%,#121512ed 100%)}
+ .coach-about-photo-wrap{width:100%;right:0;bottom:0;height:66%;opacity:.93}
+ .coach-about-photo{object-position:center 9%;object-fit:cover}
+ .coach-about-watermark{font-size:270px;top:31%;right:-22%;opacity:.7}
+ .coach-about-hero-inner{display:flex;flex-direction:column;align-items:flex-start;min-height:640px;justify-content:flex-start}
+ .coach-about-crumb{font-size:11px;letter-spacing:.14em;margin:0 0 22px}
+ .coach-about-main-title{font-size:clamp(56px,16vw,82px);line-height:.9;margin:0 0 17px}
+ .coach-about-fullname{font-size:clamp(26px,8vw,38px);max-width:350px;margin:0 0 8px}
+ .coach-about-name-caption{font-size:11px;margin:0 0 15px}
+ .coach-about-hero-intro{font-size:15px;line-height:1.55;max-width:350px;margin:0}
+ .coach-about-actions{margin-top:auto;gap:14px;justify-content:center;width:100%;align-self:center;flex-direction:column}
+ .coach-about-button{font-size:21px;justify-content:center;max-width:100%;width:min(100%,350px)}
+ .coach-about-plainlink{font-size:18px}
+ .coach-about-container{width:calc(100% - 36px)}
+ .coach-about-story{padding:66px 0 65px}
+ .coach-about-story-grid{gap:26px}
+ .coach-about-small-heading{font-size:45px}
+ .coach-about-section-tag{font-size:12px;margin-bottom:15px}
+ .coach-about-text{font-size:16px;line-height:1.72}
+ .coach-about-text p{margin-bottom:19px}
+ .coach-about-quote{padding:35px 22px 35px 35px}
+ .coach-about-quote p{font-size:28px}
+ .coach-about-method{padding:65px 0 72px}
+ .coach-about-method-title{font-size:43px}
+ .coach-about-method-lead{font-size:15px;line-height:1.62}
+ .coach-about-method-grid{grid-template-columns:1fr;gap:10px}
+ .coach-about-method-item{min-height:auto;padding:20px 21px 25px}
+ .coach-about-method-item .num{margin-bottom:16px}
+ .coach-about-method-item h3{font-size:30px;margin-bottom:9px}
+ .coach-about-method-item p{font-size:14px}
+ .coach-about-process{padding:67px 0;gap:28px}
+ .coach-about-step{padding:18px 0 21px;grid-template-columns:40px 1fr;gap:13px}
+ .coach-about-step .num{font-size:24px}
+ .coach-about-step h3{font-size:24px}
+ .coach-about-step p{font-size:14px}
+ .coach-about-video{padding:65px 0}
+ .coach-about-video-grid{gap:29px}
+ .coach-about-video p:not(.coach-about-section-tag){font-size:15px}
+ .coach-about-play{aspect-ratio:1.6}
+ .coach-about-final{padding:69px 20px 79px}
+ .coach-about-final h2{font-size:45px}
+}
+@media(max-width:380px){
+ .coach-about-hero{min-height:750px}
+ .coach-about-hero-inner{min-height:610px}
+ .coach-about-hero-intro{font-size:14px}
+ .coach-about-fullname{font-size:27px}
+}
+@media(prefers-reduced-motion:no-preference){
+ .coach-about-hero .coach-about-main-title{animation:ca-enter .5s ease-out both}
+ .coach-about-hero .coach-about-hero-intro{animation:ca-enter .65s .12s ease-out both}
+ @keyframes ca-enter{from{transform:translateY(11px);opacity:.15}to{transform:translateY(0);opacity:1}}
+}
